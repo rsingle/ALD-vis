@@ -1,0 +1,26 @@
+#maxVal_f {
+    opacity: 0;
+}
+
+#minVal_f {
+    opacity: 0;
+}
+
+#maxVal_h {
+    opacity: 0;
+}
+
+#minVal_h {
+    opacity: 0;
+}
+
+.progress-striped{
+    opacity: 0;
+}
+
+.shiny-progress-container {
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -100px !important;
+  margin-left: -650px !important;
+}
