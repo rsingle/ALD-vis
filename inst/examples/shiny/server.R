@@ -159,6 +159,8 @@ shinyServer(function(input, output, session) {
       if (sum(!check.names) > 0) data.type2 <- FALSE
       if (data.type2){
         data$locus <- paste(data$locus1, data$locus2, sep="-")
+        levs <- unique(data$locus)
+        data$locus <- factor(data$locus, levels=levs) #preserve ordering in the dataset        
         out<- by(data, list(locus=data$locus), compute.ALD)
         rbind.out <- NULL
         for (i in 1:length(out)) rbind.out <- rbind(rbind.out,out[[i]])
